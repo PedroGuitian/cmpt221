@@ -8,6 +8,17 @@ from db.server import app
 def index():
     return render_template("index.html")
 
+# About Page
+@app.route('/about')
+def about():
+    return render_template("about.html")
+
+# Contact Page
+@app.route('/contact')
+def contact():
+    return render_template("contact.html")
+
+
 if __name__ == "__main__":
     # debug refreshes your application with your new changes every time you save
     app.run(debug=True)
