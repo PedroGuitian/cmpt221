@@ -1,11 +1,38 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Lab 5</title>
-        <link rel="stylesheet" href="/static/style.css">
+        <title>Homepage</title>
+        <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
     </head>
     <body>
-        <h1>Welcome to Lab 5!</h1>
-        <p>Change me and use me as your first webpage!</p>
+        <h1>Welcome to Mutumbu's Personal Portfolio</h1>
+        <nav class="navigation-bar">
+            <a href="{{ url_for('index') }}">Home</a>
+            <a href="{{ url_for('about') }}">Contact me</a>
+            <a href="{{ url_for('contact') }}">About</a>
+        </nav>
+        <div class="snapshop-section">
+            <h2>-Snapshot-</h2>
+            <h3><span style="font-family: cursive;">Claculator</span> App</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <tr>
+                            <th>
+                                <ul>
+                                    <li>Depeloped a calculator that calculates stuff</li>
+                                    <li>The calculator works</li>
+                                    <li>Developed a calculateor that calculates stuff</li>
+                                </ul>
+                            </th>
+                            <th>
+                                <img class="calculator-pic" src="{{ url_for('static', filename='Calculator.png') }}" alt="">
+                            </th>
+                        </tr>
+                    </tr>
+                </thead>
+            </table>
+        </div>
+
     </body>
 </html>

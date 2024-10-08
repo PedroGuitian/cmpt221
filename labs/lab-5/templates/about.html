@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>About</title>
+        <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    </head>
+    <body>
+        <h1>About Mutumbu :)</h1>
+        <nav class="navigation-bar">
+            <a href="{{ url_for('index') }}">Home</a>
+            <a href="{{ url_for('about') }}">Contact me</a>
+            <a href="{{ url_for('contact') }}">About</a>
+        </nav>
+       <img class="headshot" src="{{ url_for('static', filename='MutumbuProfessionalHeadshot.png') }}" alt="Mutumbu's Professional Headshot">
+        <ul>
+            <li>Mutumbu is 22 years old</li>
+            <li>I graduated early with a master in Computer Scince</li>
+            <li>I loves Calculators</li>
+            <li>I am a GUI design expert as it is apparent on this personal portfolio</li>
+        </ul>
+    </body>
+</html>
