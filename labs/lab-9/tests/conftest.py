@@ -33,6 +33,10 @@ def db_session():
     # drop tables
     Base.metadata.drop_all(bind=engine)
 
+@pytest.fixture
+def sample_login_input():
+    return {'Email': 'calista.phippen1@marist.edu', 'Password': 'mypassword'}
+
 # example fixture - user sign in input
 # hint... can you do something similar for login?
 @pytest.fixture
